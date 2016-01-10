@@ -29,12 +29,12 @@ class LinearEquasions:
                 print("i = ", i, ", ", firstInRow)
                 for j in range(k, self.iSize + 1): #kolumny
                     if k == i:
-                        print("tu ", self.matrix[(self.iSize + 1) * i + j], "=", self.matrix[(self.iSize + 1) * i + j], "/", firstInRow)
+                        #print("tu ", self.matrix[(self.iSize + 1) * i + j], "=", self.matrix[(self.iSize + 1) * i + j], "/", firstInRow)
                         self.matrix[(self.iSize + 1) * i + j] = self.matrix[(self.iSize + 1) * i + j] / firstInRow
                         #print(self.matrix[(self.iSize + 1) * i + j], self.matrix[(self.iSize + 1) * i])
                     else:
-                        print("jestem ", self.matrix[(self.iSize + 1) * i + j], "=", self.matrix[(self.iSize + 1) * i + j], "-", firstInRow, "*", self.matrix[(self.iSize + 1) * (i - 1) + j])
-                        print((self.iSize + 1) * i + j, "self.iSize", "+", "1", "*", "i", "+", "j")
+                        #print("jestem ", self.matrix[(self.iSize + 1) * i + j], "=", self.matrix[(self.iSize + 1) * i + j], "-", firstInRow, "*", self.matrix[(self.iSize + 1) * (i - 1) + j])
+                        #print((self.iSize + 1) * i + j, "self.iSize", "+", "1", "*", "i", "+", "j")
                         self.matrix[(self.iSize + 1) * i + j] = self.matrix[(self.iSize + 1) * i + j] - firstInRow * self.matrix[(self.iSize + 1) * k + j]
 
                 self.printMatrix()
