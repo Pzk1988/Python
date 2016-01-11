@@ -1,8 +1,8 @@
 number = int(input("Enter maximum value to check "))
 
-data = list()
-for i in range(2, number + 1):
-    data.extend([i])
+data = list(range(2, number + 1))
+#for i in range(2, number + 1):
+#    data.extend([i])
 #print(data)
 
 for i in range(0, number - 1):
