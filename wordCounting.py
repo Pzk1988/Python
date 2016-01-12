@@ -1,5 +1,6 @@
 import codecs
 import operator
+import sys
 
 dictionary = dict()
 
@@ -34,14 +35,8 @@ openFile("Pan Tadeusz.txt")
 sortedDictionary = sorted(dictionary.items(), key=operator.itemgetter(1))
 sortedDictionary.reverse()
 for i in range(0, 20):
-    print(sortedDictionary[i])
-#for i in dictionary:
-#    if value < dictionary[i]:
-#        value = dictionary[i]
-#        word = i
-        
-#print(word, value)
+    sys.stdout.write('"')
+    print(sortedDictionary[i][0], end="")
+    sys.stdout.write('"')
+    print(" wystąpiło ", sortedDictionary[i][1], " razy")
 
-        
-    
-#print(removeNonCharSign("!!!92ss!a>>"))
